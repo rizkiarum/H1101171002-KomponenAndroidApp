@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Belajar, Yuk!</string>
+    <string name="judul_materi_satu">JUDUL MATERI SATU</string>
+    <string name="isi_materi_satu"><p>      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae dolorem doloremque enim fuga harum minus nulla odit quod sapiente totam, veritatis voluptatum? Deleniti officia quis sint. Aperiam, laboriosam, sint?</p></string>
+    <string name="link_materi_satu">Link Materi : www.google.com</string>
+    <string name="sintaks_satu">contoh sintaks blabla/> shadh </string>
+    <string name="judul_sintaks_satu">Contoh Sintaks</string>
+
+</resources>
