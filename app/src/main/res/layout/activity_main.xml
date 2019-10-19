@@ -15,16 +15,16 @@
 
 
         <RelativeLayout
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="28dp"
-            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/txtdashboard"
-                android:text="KOMPONEN"
-                android:textSize="22sp"
+                android:text="KOMPONEN\nANDROID STUDIO"
+                android:textSize="30sp"
                 android:textColor="#FFFFFF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -32,23 +32,23 @@
             <TextView
                 android:layout_marginTop="6dp"
                 android:layout_below="@+id/txtdashboard"
-                android:text="Ada 5 macam, yaitu"
-                android:textSize="14sp"
+                android:text="Ada 5 macam, yaitu : "
+                android:textSize="20sp"
                 android:textColor="#FFFFFF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <ImageView
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ig"
-                android:layout_width="62dp"
-                android:layout_height="62dp" />
+                android:src="@drawable/ava"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
         </RelativeLayout>
 
         <GridLayout
             android:layout_gravity="center"
             android:columnCount="2"
-            android:rowCount="5"
+            android:rowCount="3"
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
             android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
                 android:id="@+id/satu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
@@ -67,15 +67,15 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:layout_margin="12dp"
-                    android:src="@drawable/ig" />
+                    android:src="@drawable/icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="12dp"
                     android:layout_marginTop="12dp"
-                    android:text="Satu"
-                    android:textColor="#6f6f6f"
+                    android:text="ACTIVITY"
+                    android:textColor="#FFFFFF"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -83,31 +83,6 @@
 
             <LinearLayout
                 android:id="@+id/dua"
-                android:layout_marginTop="100dp"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_margin="12dp"
-                    android:src="@drawable/ig"
-                    android:layout_width="88dp"
-                    android:layout_height="88dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    android:layout_marginTop="12dp"
-                    android:text="Dua"
-                    android:textColor="#6f6f6f"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/tiga"
                 android:layout_marginTop="50dp"
                 android:orientation="vertical"
                 android:padding="16dp"
@@ -117,7 +92,7 @@
 
                 <ImageView
                     android:layout_margin="12dp"
-                    android:src="@drawable/ig"
+                    android:src="@drawable/icon"
                     android:layout_width="88dp"
                     android:layout_height="88dp"/>
 
@@ -126,8 +101,33 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="12dp"
                     android:layout_marginTop="12dp"
-                    android:text="Tiga"
-                    android:textColor="#6f6f6f"
+                    android:text="SERVICE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tiga"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_margin="12dp"
+                    android:src="@drawable/icon"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="BROADCAST\nRECEIVER"
+                    android:textColor="#FFFFFF"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -135,7 +135,7 @@
 
             <LinearLayout
                 android:id="@+id/empat"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical"
                 android:padding="16dp"
                 android:gravity="center"
@@ -144,7 +144,7 @@
 
                 <ImageView
                     android:layout_margin="12dp"
-                    android:src="@drawable/ig"
+                    android:src="@drawable/icon"
                     android:layout_width="88dp"
                     android:layout_height="88dp"/>
 
@@ -153,37 +153,38 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="12dp"
                     android:layout_marginTop="12dp"
-                    android:text="Empat"
-                    android:textColor="#6f6f6f"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lima"
-                android:layout_marginTop="50dp"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_margin="12dp"
-                    android:src="@drawable/ig"
-                    android:layout_width="88dp"
-                    android:layout_height="88dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    android:layout_marginTop="12dp"
-                    android:text="Lima"
-                    android:textColor="#6f6f6f"
+                    android:text="CONTENT\nPROVIDER"
+                    android:textColor="#FFFFFF"
                     android:textSize="18sp" />
             </LinearLayout>
 
         </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/lima"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="12dp"
+            android:src="@drawable/icon"
+            android:layout_width="88dp"
+            android:layout_height="88dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="12dp"
+            android:text="INTENT"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
     </LinearLayout>
 
 

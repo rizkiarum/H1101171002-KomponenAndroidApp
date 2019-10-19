@@ -1,9 +1,143 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
     <string name="app_name">Belajar, Yuk!</string>
-    <string name="judul_materi_satu">JUDUL MATERI SATU</string>
-    <string name="isi_materi_satu"><p>      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae dolorem doloremque enim fuga harum minus nulla odit quod sapiente totam, veritatis voluptatum? Deleniti officia quis sint. Aperiam, laboriosam, sint?</p></string>
-    <string name="link_materi_satu">Link Materi : www.google.com</string>
-    <string name="sintaks_satu">contoh sintaks blabla/> shadh </string>
+    //Materi Satu
+    <string name="judul_materi_satu">ACTIVITY</string>
+    <string name="isi_materi_satu">
+
+    \t\t\t\t\tActivity adalah komponen pada aplikasi Android yang menampilkan dan mengatur halaman aplikasi sebagai tempat interaksi antara pengguna dengan aplikasi,seperti membuat panggilan telepon, mengambil foto, mengirim pesan singkat, atau mengirim email.\n
+
+    \n \t\t\t\t\tSebuah Activity mengatur satu halaman user interface aplikasi.\n
+
+    \n \t\t\t\t\tSehingga jika sebuah aplikasi Android memiliki beberapa halaman user interface yang saling berinteraksi,
+    berarti aplikasi tersebut memiliki beberapa Activity yang saling berinteraksi.\n
+
+    \n \t\t\t\t\tSebuah Activity akan menampilkan antarmuka aplikasi di layar,
+    sebagai contoh ketika kita membuka sebuah aplikasi maka akan muncul tampilan dari aplikasi tersebut.</string>
+
+    <string name="link_materi_satu">
+        <center>Link Materi : \n</center>
+        \n <a href="https://codelabs.developers.google.com/codelabs/android-training-create-an-activity/index.html?index=..%2F..%2Fandroid-training#0">Android fundamentals 02.1: Activities and intents</a> \n
+        \n <a href="https://codelabs.developers.google.com/codelabs/android-training-activity-lifecycle-and-state/index.html?index=..%2F..%2Fandroid-training#0">Android fundamentals 02.2: Activity lifecycle and state</a>
+    </string>
+
+    <string name="sintaks_satu"> public class MainActivity extends Activity { \n
+
+    \n \t\t\t\t\t@Override
+    \n \t\t\t\t\tprotected void onCreate(Bundle savedInstanceState) {
+        \n \t\t\t\t\tsuper.onCreate(savedInstanceState);
+        \n \t\t\t\t\tsetContentView(R.layout.activity_main);\n
+
+    \n \t\t\t\t\t}
+\n}
+    </string>
     <string name="judul_sintaks_satu">Contoh Sintaks</string>
+
+    //Materi Dua
+
+    <string name="judul_materi_dua">SERVICE</string>
+    <string name="isi_materi_dua">
+        \t\t\t\t\tService adalah sebuah komponen aplikasi yang bisa melakukan operasi yang berjalan lama di latar belakang dan tidak menyediakan antarmuka pengguna.\n
+
+        \n \t\t\t\t\tKomponen aplikasi lain bisa memulai layanan dan komponen aplikasi tersebut akan terus berjalan di latar belakang walaupun pengguna beralih ke aplikasi lain.\n
+
+        \n \t\t\t\t\tSelain itu, komponen bisa mengikat ke layanan untuk berinteraksi dengannya dan bahkan melakukan komunikasi antarproses (IPC).\n
+
+        \n \t\t\t\t\tMisalnya, layanan mungkin menangani transaksi jaringan, memutar musik, melakukan file I/O, atau berinteraksi dengan penyedia materi dari latar belakang.
+       </string>
+
+    <string name="link_materi_dua">
+        <center>Link Materi : \n</center>
+        \n <a href="https://developer.android.com/guide/topics/manifest/service-element">Service Element</a> \n
+    </string>
+
+    <string name="sintaks_dua">
+<![CDATA[<manifest ... > \n
+... \n
+\t\t\t\t<application ... > \n
+\t\t\t\t\t\t\t\t<service android:name=.ExampleService />\n
+ \t\t\t\t...\n
+ \t\t\t\t</application>\n
+ </manifest>]]>
+    </string>
+    <string name="judul_sintaks_dua">Contoh Sintaks</string>
+
+    //Materi Tiga
+
+    <string name="judul_materi_tiga">BROADCAST RECEIVER</string>
+    <string name="isi_materi_tiga">
+        \t\t\t\t\tBroadcast Receiver berfungsi menerima pesan intent dari aplikasi lain atau dari sistem.\n
+
+        \n \t\t\t\t\tSebagai contoh, suatu aplikasi mengirim pesan berisi perintah tertentu untuk aplikasi lain bahwa beberapa data telah diunduh ke perangkat dan tersedia bagi mereka untuk menggunakan apklikasi tersebut, jadi Broadcast Receiver inilah yang akan menangani komunikasi ini dan akan melakukan tindakan yang tepat.\n
+
+        \n \t\t\t\t\tSebuah Broadcast Receiver diimplementasikan sebagai subclass dari class BroadcastReceiver dan setiap pesan akan dikirim dan diterima sebagai objek Intent.
+       </string>
+
+    <string name="link_materi_tiga">
+        <center>Link Materi : \n</center>
+        \n <a href="https://codelabs.developers.google.com/codelabs/android-training-broadcast-receivers/index.html?index=..%2F..%2Fandroid-training#0">Android fundamentals 07.3: Broadcast receivers
+</a> \n
+    </string>
+
+    <string name="sintaks_tiga">
+public class MyReceiver  extends  \n
+BroadcastReceiver { \n
+\t\t\t\t public void onReceive(context,intent){} \n
+}\n
+    </string>
+    <string name="judul_sintaks_tiga">Contoh Sintaks</string>
+
+    //Materi Empat
+
+    <string name="judul_materi_empat">CONTENT PROVIDER</string>
+    <string name="isi_materi_empat">
+        \t\t\t\t\tContentProvider adalah penyedia konten dari satu aplikasi ke aplikasi lain atas perintah tertentu.\n
+
+        \n \t\t\t\t\t Perintah tersebut ditangani oleh sebuah method dari class ContentResolver.\n
+
+        \n \t\t\t\t\tData dapat disimpan dalam sistem file, database atau di tempat lainnya.\n
+        \n \t\t\t\t\tContentProvider diimplementasikan sebagai subclass dari class ContentProvider dan harus menerapkan satu set standar API yang memungkinkan aplikasi lain untuk melakukan transaksi.
+       </string>
+
+    <string name="link_materi_empat">
+        <center>Link Materi : \n</center>
+        \n <a href="https://developer.android.com/guide/topics/providers/content-providers?hl=id">Content Providers</a> \n
+    </string>
+
+    <string name="sintaks_empat">
+public class MyContentProvider extends   \n
+ ContentProvider { \n
+\t\t\t\t public void onCreate(){} \n
+}\n
+    </string>
+    <string name="judul_sintaks_empat">Contoh Sintaks</string>
+
+    //Materi Lima
+
+    <string name="judul_materi_lima">INTENT</string>
+    <string name="isi_materi_lima">
+        \t\t\t\t\tIntent adalah sebuah kelas dalam programming Android yang berfungsi untuk perpindahan halaman.\n
+
+        \n \t\t\t\t\tIntent juga merupakan suatu objek yang terdapat dalam suatu activity dimana objek tersebut dapat komunikasi dengan activity yang lain, baik activity pada fungsi internal android misal seperti memanggil activity dalam satu package atau beda package yang masih berada dalam satu project.
+       </string>
+
+    <string name="link_materi_lima">
+        <center>Link Materi : \n</center>
+         \n <a href="https://codelabs.developers.google.com/codelabs/android-training-create-an-activity/index.html#0">Android fundamentals 02.1: Activities and intents</a> \n
+        \n <a href="https://codelabs.developers.google.com/codelabs/android-training-activity-with-implicit-intent/index.html?index=..%2F..android-training#0">Android fundamentals 02.3: Implicit intents</a>
+    </string>
+
+    <string name="sintaks_lima"><![CDATA[
+<activity
+ \n \t\t\t\t\tandroid:name=".SecondActivity"
+ \n \t\t\t\t\tandroid:label="@string/title_activity_second" >
+ \n \t\t\t\t\t\t\t\t\t\t<intent-filter>
+ \n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<action android:name="com.something.something" />\n
+
+ \n \t\t\t\t\t\t\t\t\t\t<category android:name="android.intent.category.LAUNCHER" />
+ \n \t\t\t\t\t\t</intent-filter>
+</activity>
+]]>
+    </string>
+    <string name="judul_sintaks_lima">Contoh Sintaks</string>
 
 </resources>
